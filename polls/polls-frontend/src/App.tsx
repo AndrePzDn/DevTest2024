@@ -1,5 +1,5 @@
-import PollForm from "./common/Form"
 import Header from "./common/Header"
+import PollForm from "./components/FormAddPoll"
 import PollsLayout from "./layouts/PollsLayout"
 
 function App() {

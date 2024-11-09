@@ -36,8 +36,8 @@ function PollDisplay({ poll }: Props) {
         <h3 className="font-bold text-lg">{poll.name}</h3>
         <Button type="button">Vote</Button>
       </section>
-      {poll.options.map((option) => (
-        <div className="flex justify-between">
+      {poll.options.map((option, index) => (
+        <div className="flex justify-between" key={index}>
           <p>{option.name}</p>
           <p>{option.votes}</p>
         </div>
